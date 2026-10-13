@@ -25,4 +25,3 @@ $docRoot     = str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT'] ?? ''))
 $base        = ($docRoot && strpos($projectRoot, $docRoot) === 0) ? substr($projectRoot, strlen($docRoot)) : '';
 define('BASE_URL', rtrim($base, '/'));
 define('UPLOAD_DIR', $projectRoot . '/uploads/');
-HAA
